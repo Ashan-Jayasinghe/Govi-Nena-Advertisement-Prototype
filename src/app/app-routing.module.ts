@@ -99,7 +99,7 @@ const routes: Routes = [
   {
     path: 'tubers',
     loadChildren: () =>
-      import('./tubers/tubers.module').then((m) => m.TubersPageModule),
+      import('./pages/tubers/tubers.module').then((m) => m.TubersPageModule),
   },
   {
     path: 'tractors',
