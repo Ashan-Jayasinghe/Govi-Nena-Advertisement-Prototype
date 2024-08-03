@@ -25,7 +25,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true"
-  ><ion-card style="margin-top: 8%">
+  ><ion-card style="margin-top: 5%">
     <ion-card-header>
       <ion-card-title style="text-align: center"
         >How to Post Your Ad?</ion-card-title
@@ -44,8 +44,12 @@
     <table>
       <tr>
         <td>
-          <ion-card color="light" button="true">
-            <ion-card-title style="text-align: center"
+          <ion-card
+            color="light"
+            button="true"
+            [routerLink]="['/planting-materials']"
+          >
+            <ion-card-title style="text-align: center; padding: 5%"
               >Planting Materials</ion-card-title
             >
             <img
@@ -57,8 +61,8 @@
         </td>
 
         <td>
-          <ion-card color="light" button="true">
-            <ion-card-title style="text-align: center"
+          <ion-card color="light" button="true" [routerLink]="['/fertilizers']">
+            <ion-card-title style="text-align: center; padding: 5%"
               >Fertilizers</ion-card-title
             >
             <img
@@ -71,8 +75,12 @@
       </tr>
       <tr>
         <td>
-          <ion-card color="light" button="true">
-            <ion-card-title style="text-align: center"
+          <ion-card
+            color="light"
+            button="true"
+            [routerLink]="['/agro-chemicals']"
+          >
+            <ion-card-title style="text-align: center; padding: 5%"
               >Agro Chemicals</ion-card-title
             >
             <img
@@ -84,8 +92,8 @@
         </td>
 
         <td>
-          <ion-card color="light" button="true">
-            <ion-card-title style="text-align: center"
+          <ion-card color="light" button="true" [routerLink]="['/machineries']">
+            <ion-card-title style="text-align: center; padding: 5%"
               >Machineries</ion-card-title
             >
             <img

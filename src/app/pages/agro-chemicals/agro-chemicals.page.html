@@ -1,13 +1,72 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>agro-chemicals</ion-title>
+<ion-header>
+  <ion-toolbar color="success" style="display: flex">
+    <ion-button style="position: relative; left: 5%" fill="clear">
+      <ion-icon color="light" name="arrow-back"></ion-icon>
+    </ion-button>
+
+    <ion-title
+      style="
+        color: white;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: 4px;
+        left: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      "
+    >
+      AGRO-CHEMICALS
+    </ion-title>
+    <ion-button style="position: relative; left: 5%" fill="clear">
+      <ion-icon name="home" color="light"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">agro-chemicals</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-card button="true">
+    <table style="text-align: center">
+      <tr>
+        <td><ion-card-title>Pestisides</ion-card-title></td>
+        <td style="width: 60%; padding: 5%">
+          <img
+            alt="Silhouette of mountains"
+            style="margin: 5%; height: 160px; width: 100%"
+            src="assets/pexels-rsydarfn-13882449.jpg"
+          />
+        </td>
+      </tr>
+    </table>
+  </ion-card>
+
+  <ion-card button="true">
+    <table style="text-align: center">
+      <tr>
+        <td style="width: 60%; padding: 5%">
+          <img
+            alt="Silhouette of mountains"
+            style="margin: 5%; height: 160px; width: 100%"
+            src="assets/what-are-the-plant-growth-regulators-plants-baconline.jpg"
+          />
+        </td>
+        <td><ion-card-title>Plant Growth Regulators</ion-card-title></td>
+      </tr>
+    </table>
+  </ion-card>
+
+  <ion-card button="true">
+    <table style="text-align: center">
+      <tr>
+        <td><ion-card-title>Other</ion-card-title></td>
+        <td style="width: 60%; padding: 5%">
+          <img
+            alt="Silhouette of mountains"
+            style="margin: 5%; height: 160px; width: 100%"
+            src="assets/pexels-rsydarfn-13882449.jpg"
+          />
+        </td>
+      </tr>
+    </table>
+  </ion-card>
 </ion-content>
