@@ -54,15 +54,35 @@ const routes: Routes = [
   },
   {
     path: 'pesticides',
-    loadChildren: () => import('./pages/pesticides/pesticides.module').then( m => m.PesticidesPageModule)
+    loadChildren: () =>
+      import('./pages/pesticides/pesticides.module').then(
+        (m) => m.PesticidesPageModule
+      ),
   },
   {
     path: 'plant-growth-regulators',
-    loadChildren: () => import('./pages/plant-growth-regulators/plant-growth-regulators.module').then( m => m.PlantGrowthRegulatorsPageModule)
+    loadChildren: () =>
+      import(
+        './pages/plant-growth-regulators/plant-growth-regulators.module'
+      ).then((m) => m.PlantGrowthRegulatorsPageModule),
   },
   {
     path: 'other',
-    loadChildren: () => import('./pages/other/other.module').then( m => m.OtherPageModule)
+    loadChildren: () =>
+      import('./pages/other/other.module').then((m) => m.OtherPageModule),
+  },
+  {
+    path: 'organic',
+    loadChildren: () =>
+      import('./pages/organic/organic.module').then((m) => m.OrganicPageModule),
+  },
+
+  {
+    path: 'inorganic',
+    loadChildren: () =>
+      import('./pages/inorganic/inorganic.module').then(
+        (m) => m.InorganicPageModule
+      ),
   },
 ];
 
