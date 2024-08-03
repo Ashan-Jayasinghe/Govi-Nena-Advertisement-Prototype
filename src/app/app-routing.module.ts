@@ -84,6 +84,18 @@ const routes: Routes = [
         (m) => m.InorganicPageModule
       ),
   },
+  {
+    path: 'seeds',
+    loadChildren: () => import('./seeds/seeds.module').then( m => m.SeedsPageModule)
+  },
+  {
+    path: 'seedlings',
+    loadChildren: () => import('./seedlings/seedlings.module').then( m => m.SeedlingsPageModule)
+  },
+  {
+    path: 'tubers',
+    loadChildren: () => import('./tubers/tubers.module').then( m => m.TubersPageModule)
+  },
 ];
 
 @NgModule({
