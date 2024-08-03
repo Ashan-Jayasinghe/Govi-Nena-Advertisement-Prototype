@@ -25,7 +25,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-card button="true">
+  <ion-card button="true" [routerLink]="['/pesticides']">
     <table style="text-align: center">
       <tr>
         <td><ion-card-title>Pestisides</ion-card-title></td>
@@ -40,7 +40,7 @@
     </table>
   </ion-card>
 
-  <ion-card button="true">
+  <ion-card button="true" [routerLink]="['/plant-growth-regulators']">
     <table style="text-align: center">
       <tr>
         <td style="width: 60%; padding: 5%">
@@ -55,7 +55,7 @@
     </table>
   </ion-card>
 
-  <ion-card button="true">
+  <ion-card button="true" [routerLink]="['/other']">
     <table style="text-align: center">
       <tr>
         <td><ion-card-title>Other</ion-card-title></td>

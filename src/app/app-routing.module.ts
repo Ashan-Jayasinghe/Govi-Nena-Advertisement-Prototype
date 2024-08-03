@@ -52,6 +52,18 @@ const routes: Routes = [
         (m) => m.SellRentPageModule
       ),
   },
+  {
+    path: 'pesticides',
+    loadChildren: () => import('./pages/pesticides/pesticides.module').then( m => m.PesticidesPageModule)
+  },
+  {
+    path: 'plant-growth-regulators',
+    loadChildren: () => import('./pages/plant-growth-regulators/plant-growth-regulators.module').then( m => m.PlantGrowthRegulatorsPageModule)
+  },
+  {
+    path: 'other',
+    loadChildren: () => import('./pages/other/other.module').then( m => m.OtherPageModule)
+  },
 ];
 
 @NgModule({
