@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar color="success" style="display: flex">
+    <ion-button style="position: relative; left: 5%" fill="clear">
+      <ion-icon color="light" name="arrow-back"></ion-icon>
+    </ion-button>
+
+    <ion-title
+      style="
+        color: white;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: 4px;
+        left: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      "
+    >
+      POST YOUR AD HERE
+    </ion-title>
+    <ion-button style="position: relative; left: 5%" fill="clear">
+      <ion-icon name="home" color="light"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"
+  ><ion-card style="margin-top: 8%">
+    <ion-card-header>
+      <ion-card-title style="text-align: center"
+        >How to Post Your Ad?</ion-card-title
+      >
+    </ion-card-header>
+    <div style="display: flex; justify-content: center">
+      <video width="auto" height="190px" controls="controls">
+        <source
+          src="https://media.geeksforgeeks.org/wp-content/uploads/20231020155223/Full-Stack-Development-_-LIVE-Classes-_-GeeksforGeeks.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+  </ion-card>
+  <div class="table-container">
+    <table>
+      <tr>
+        <td>
+          <ion-card color="light" button="true">
+            <ion-card-title style="text-align: center"
+              >Planting Materials</ion-card-title
+            >
+            <img
+              alt="Silhouette of mountains"
+              src="assets/Rectangle 30.png"
+              style="width: 100%; height: 170px"
+            />
+          </ion-card>
+        </td>
+
+        <td>
+          <ion-card color="light" button="true">
+            <ion-card-title style="text-align: center"
+              >Fertilizers</ion-card-title
+            >
+            <img
+              alt="Silhouette of mountains"
+              src="assets/Rectangle 34.png"
+              style="width: 100%; height: 170px"
+            />
+          </ion-card>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <ion-card color="light" button="true">
+            <ion-card-title style="text-align: center"
+              >Agro Chemicals</ion-card-title
+            >
+            <img
+              alt="Silhouette of mountains"
+              src="assets/Frame 1.png"
+              style="width: 100%; height: 170px"
+            />
+          </ion-card>
+        </td>
+
+        <td>
+          <ion-card color="light" button="true">
+            <ion-card-title style="text-align: center"
+              >Machineries</ion-card-title
+            >
+            <img
+              alt="Silhouette of mountains"
+              src="assets/Rectangle 26.png"
+              style="width: 100%; height: 170px"
+            />
+          </ion-card>
+        </td>
+      </tr>
+    </table>
+  </div>
+</ion-content>
