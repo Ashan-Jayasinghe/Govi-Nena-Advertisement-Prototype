@@ -86,15 +86,65 @@ const routes: Routes = [
   },
   {
     path: 'seeds',
-    loadChildren: () => import('./seeds/seeds.module').then( m => m.SeedsPageModule)
+    loadChildren: () =>
+      import('./pages/seeds/seeds.module').then((m) => m.SeedsPageModule),
   },
   {
     path: 'seedlings',
-    loadChildren: () => import('./seedlings/seedlings.module').then( m => m.SeedlingsPageModule)
+    loadChildren: () =>
+      import('./pages/seedlings/seedlings.module').then(
+        (m) => m.SeedlingsPageModule
+      ),
   },
   {
     path: 'tubers',
-    loadChildren: () => import('./tubers/tubers.module').then( m => m.TubersPageModule)
+    loadChildren: () =>
+      import('./tubers/tubers.module').then((m) => m.TubersPageModule),
+  },
+  {
+    path: 'tractors',
+    loadChildren: () =>
+      import('./pages/tractors/tractors.module').then(
+        (m) => m.TractorsPageModule
+      ),
+  },
+  {
+    path: 'tillage',
+    loadChildren: () =>
+      import('./pages/tillage/tillage.module').then((m) => m.TillagePageModule),
+  },
+  {
+    path: 'irrigation-systems',
+    loadChildren: () =>
+      import('./pages/irrigation-systems/irrigation-systems.module').then(
+        (m) => m.IrrigationSystemsPageModule
+      ),
+  },
+  {
+    path: 'sprayers',
+    loadChildren: () =>
+      import('./pages/sprayers/sprayers.module').then(
+        (m) => m.SprayersPageModule
+      ),
+  },
+  {
+    path: 'dryers',
+    loadChildren: () =>
+      import('./pages/dryers/dryers.module').then((m) => m.DryersPageModule),
+  },
+  {
+    path: 'harvesting-equipments',
+    loadChildren: () =>
+      import('./pages/harvesting-equipments/harvesting-equipments.module').then(
+        (m) => m.HarvestingEquipmentsPageModule
+      ),
+  },
+  {
+    path: 'planting-equipments',
+    loadChildren: () =>
+      import('./pages/planting-equipments/planting-equipments.module').then(
+        (m) => m.PlantingEquipmentsPageModule
+      ),
   },
 ];
 
