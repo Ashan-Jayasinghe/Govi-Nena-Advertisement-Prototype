@@ -1,0 +1,12 @@
+.container {
+  .item {
+    position: relative;
+    top: 20%;
+    margin-bottom: 15%;
+  }
+
+  .item:hover {
+    background-color: rgb(164, 248, 168);
+    color: rgb(0, 0, 0);
+  }
+}

@@ -1,0 +1,68 @@
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  .category {
+    font-size: 1.5rem;
+
+    .p-category {
+      margin-bottom: 0;
+    }
+    .p-sub-line-category {
+      margin-top: 2%;
+      font-size: 1rem;
+    }
+  }
+  .type-label {
+    width: 30%;
+    ion-label {
+      font-size: 1.5rem;
+      display: inline-block;
+    }
+  }
+  .type-select {
+    position: relative;
+    left: 20%;
+    padding: 7% 0;
+
+    ion-select.always-flip::part(icon) {
+      transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    ion-select.always-flip.select-expanded::part(icon) {
+      transform: rotate(180deg);
+    }
+
+    ion-select.never-flip::part(icon) {
+      transform: none;
+    }
+  }
+
+  .type-text-input {
+    padding: 5%;
+    position: relative;
+    left: 5%;
+  }
+
+  .variety-label {
+    width: 30%;
+    ion-label {
+      font-size: 1.5rem;
+      display: inline-block;
+    }
+  }
+  .variety-text-input {
+    padding: 5%;
+    position: relative;
+    left: 5%;
+  }
+  .select-label {
+    margin: 5% 0;
+    ion-label {
+      font-size: 1.5rem;
+    }
+  }
+}
