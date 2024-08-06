@@ -1,13 +1,144 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>organic</ion-title>
+<ion-header>
+  <ion-toolbar color="success" style="display: flex">
+    <ion-button style="position: relative; left: 5%" fill="clear">
+      <ion-icon color="light" name="arrow-back"></ion-icon>
+    </ion-button>
+
+    <ion-title
+      style="
+        color: white;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        top: 4px;
+        left: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      "
+      >ORGANIC FERTILIZERS
+    </ion-title>
+    <ion-button style="position: relative; left: 5%" fill="clear">
+      <ion-icon name="home" color="light"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">organic</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="container">
+    <ion-item
+      ><div class="category">
+        <!-- <p class="p-category">Category</p>
+        <p class="p-sub-line-category">planting Materials -> Seeds</p> -->
+      </div></ion-item
+    >
+    <form>
+      <ion-item color="light">
+        <div class="variety-label">
+          <ion-label>Type</ion-label>
+        </div>
+        <div class="variety-text-input">
+          <ion-input
+            type="text"
+            fill="outline"
+            placeholder="Example: Compost"
+          ></ion-input>
+        </div>
+      </ion-item>
+
+      <ion-item color="light">
+        <div class="type-label">
+          <ion-label>Title</ion-label>
+        </div>
+        <div class="type-text-input">
+          <ion-input fill="outline" placeholder="Enter the Title"></ion-input>
+        </div>
+      </ion-item>
+
+      <ion-item color="light">
+        <table>
+          <tr>
+            <td>
+              <div class="price-label">
+                <ion-label>Price</ion-label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 20%">
+              <ion-select
+                class="always-flip"
+                toggleIcon="caret-down-sharp"
+                interface="popover"
+                placeholder="100g"
+              >
+                <ion-select-option value="250g">250g</ion-select-option>
+                <ion-select-option value="500g">500g</ion-select-option>
+                <ion-select-option value="1kg">1kg</ion-select-option>
+                <ion-select-option value="5kg">5kg</ion-select-option>
+                <ion-select-option value="10kg">10 kg</ion-select-option>
+              </ion-select>
+            </td>
+            <td style="width: 70%">
+              <div class="price-input">
+                <ion-input
+                  fill="outline"
+                  placeholder="Enter the Price"
+                  type="number"
+                ></ion-input>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </ion-item>
+
+      <ion-item color="light">
+        <div class="type-label">
+          <ion-label>Mobile</ion-label>
+        </div>
+        <div class="type-text-input">
+          <ion-input
+            type="number"
+            fill="outline"
+            placeholder="077*******"
+          ></ion-input>
+        </div>
+      </ion-item>
+
+      <ion-item color="light">
+        <table>
+          <tr>
+            <td>
+              <div class="select-label">
+                <ion-label>Description</ion-label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <div class="select-text-input">
+              <ion-textarea
+                rows="10"
+                cols="50"
+                fill="outline"
+                placeholder="Enter a Description"
+              >
+              </ion-textarea>
+            </div>
+          </tr>
+        </table>
+      </ion-item>
+      <ion-button
+        type="submit"
+        color="success"
+        fill="outline"
+        style="padding-top: 5%; width: 40%; position: relative; left: 55%"
+        >Save</ion-button
+      >
+      <ion-button
+        color="danger"
+        fill="outline"
+        style="padding-top: 5%; width: 40%; position: relative; right: 38%"
+        >Cancel</ion-button
+      >
+    </form>
+  </div>
 </ion-content>
